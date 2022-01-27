@@ -47,9 +47,25 @@ $(document).ready(function () {
             modal.removeClass('modal--visible')
         };
     });
+
     $(document).on('keydown', function(e) {
         if (e.keyCode == 27)
             modal.removeClass('modal--visible');
+        });
+
+        var btn = $('#button');
+
+        $(window).scroll(function() {
+          if ($(window).scrollTop() > 300) {
+            btn.addClass('show');
+          } else {
+            btn.removeClass('show');
+          }
+        });
+        
+        btn.on('click', function(e) {
+          e.preventDefault();
+          $('html, body').animate({scrollTop:0}, '300');
         });
 });
 
