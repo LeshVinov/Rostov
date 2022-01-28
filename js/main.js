@@ -67,6 +67,32 @@ $(document).ready(function () {
           e.preventDefault();
           $('html, body').animate({scrollTop:0}, '300');
         });
+
+        // var mySwiper = new Swiper ('.swiper-container', {
+        //     loop: true
+        // })
+
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+          
+            // If we need pagination
+            pagination: {
+              el: '.swiper-pagination',
+              type: 'bullets',
+            },
+          
+            // Navigation arrows
+            navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+            },
+          });
+        var next = $('.swiper-button-next');
+        var prev = $('.swiper-button-prev');
+        var bullets = $('.swiper-pagination');
+
+        next.css('left', prev.width() + 10 + bullets.width() +10)
+        bullets.css('left', prev.width() + 10)
 });
 
 
