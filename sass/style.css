@@ -1045,11 +1045,6 @@ img {
   bottom: -2px;
 }
 
-.steps {
-  margin-top: -30.57rem;
-  padding-top: 30.57rem;
-}
-
 .steps .section-pretitle {
   font-family: 'Futura Demi', cursive;
   text-transform: uppercase;
@@ -1060,20 +1055,11 @@ img {
 
 .steps .section-title__heading {
   font-size: 2rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 40%;
 }
 
 .steps .section-content {
   margin-top: 6.571rem;
   margin-right: 9.714rem;
-  margin-left: 0.1rem;
 }
 
 .steps .section-content__count {
@@ -1081,10 +1067,11 @@ img {
   text-transform: uppercase;
   font-size: 1.286rem;
   line-height: 1.786rem;
+  color: #E3B873;
 }
 
 .steps .section-content__heading--primary {
-  font-family: 'Yeseva One',cursive;
+  font-family: 'Yeseva One';
   text-transform: uppercase;
   font-weight: normal;
   font-size: 1.07rem;
@@ -1099,69 +1086,6 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.steps .swiper-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin-top: -1.2rem;
-  margin-left: 0.1rem;
-}
-
-.steps-desc {
-  width: 9.71rem;
-  margin-right: 1.6rem;
-  margin-bottom: 2.57rem;
-  color: rgba(255, 255, 255, 0.3);
-}
-
-.steps-desc--chosen {
-  color: #fff;
-}
-
-.steps-desc__count {
-  position: relative;
-  font-family: 'Yeseva One',cursive;
-  font-size: 1.07rem;
-  line-height: 1.5rem;
-  text-transform: uppercase;
-  margin-bottom: 1.214rem;
-}
-
-.steps-desc__count::after {
-  content: '';
-  position: absolute;
-  bottom: -5px;
-  left: 0;
-  width: 19px;
-  height: 1px;
-  background: rgba(227, 184, 115, 0.3);
-}
-
-.steps-desc__count--chosen::after {
-  content: '';
-  position: absolute;
-  bottom: -5px;
-  left: 0;
-  width: 19px;
-  height: 1px;
-  background: #E3B873;
-}
-
-.steps-desc__text {
-  font-size: 1.07rem;
-  line-height: 1.29rem;
-}
-
-.steps .step-img {
-  width: 805px;
-  height: 421px;
 }
 
 @media screen and (max-width: 1200px) {
