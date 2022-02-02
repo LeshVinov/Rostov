@@ -1347,10 +1347,89 @@ img {
 
 .feedback {
   padding-top: 0;
+  padding-bottom: 25.286rem;
 }
 
 .feedback .section-title__subtitle {
   max-width: 25.71rem;
+}
+
+.feedback-item {
+  padding: 1.714rem 1.429rem 5.642rem;
+  max-width: 26.857rem;
+}
+
+.feedback-item__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.feedback-item__img {
+  margin-right: 1.643rem;
+}
+
+.feedback-item__text {
+  font-size: 1.07rem;
+  line-height: 1.928rem;
+  color: #959595;
+}
+
+.feedback-item .card-title {
+  max-width: 14.07rem;
+}
+
+.feedback-item__data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: -2.286rem;
+}
+
+.feedback-square {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #E3B873;
+  border-right: 0.75px solid #fff;
+  padding-right: 1rem;
+  padding-left: 1.3rem;
+}
+
+.feedback-square .feedback__text {
+  text-transform: uppercase;
+}
+
+.feedback__img {
+  margin-right: 1.07rem;
+}
+
+.feedback__text {
+  font-family: 'Yeseva One', cursive;
+  font-size: 1.214rem;
+  line-height: 2rem;
+  color: #fff;
+}
+
+.feedback-days {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #E3B873;
+  padding-right: 1.714rem;
+}
+
+.feedback-days .feedback__img {
+  padding-left: 1rem;
 }
 
 .footer {
@@ -1362,6 +1441,7 @@ img {
   background-color: #181818;
   max-width: 63.07rem;
   margin: auto;
+  margin-top: -20rem;
   margin-bottom: 3.71rem;
   padding: 2.5rem;
 }
