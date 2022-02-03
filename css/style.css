@@ -516,12 +516,13 @@ template {
   visibility: visible;
 }
 
-label.invalid {
+.invalid {
   color: #E3B873;
 }
 
 input.invalid {
   border-bottom: 1px solid #E3B873;
+  margin-bottom: 5px;
 }
 
 .container {
@@ -936,10 +937,6 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   flexbasis: 30%;
-}
-
-.control__label {
-  margin-bottom: -7px;
 }
 
 .control__button {

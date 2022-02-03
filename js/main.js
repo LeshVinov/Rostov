@@ -123,20 +123,69 @@ $(document).ready(function () {
                   email: true
                 }
               },
+              errorElement:"div",
               messages: {
                 userName: {
-                    required:"Имя обязательно",
+                    required:"Заполните поле",
                     minlength:"Имя не короче двух символов",
                     maxlength:"Имя не длиннее 15 символов"
                 },
-                userPhone: "Телефон обязателен",
+                userPhone: "Заполните поле",
                 userEmail: {
-                  required: "Обязательно укажите email",
-                  email: "Введите в формате: name@domain.com"
+                  required: "Заполните поле",
+                  email: "Введите корректный email, в формате: name@domain.com"
                 }
               }
         });
-        $('[type=tel]').mask('+7(000) 000-00-00', {placeholder: "+7(___) ___-__-__"});
+        $('[type=tel]').mask('+7(000) 000-00-00');
+
+        $('.control__form').validate({
+          errorClass: "invalid",
+          rules: {
+              // simple rule, converted to {required:true}
+              userName: {
+                required: true,
+                minlength: 2,
+                maxlength: 15
+              },
+              userPhone: "required",
+            },
+            errorElement:"div",
+            messages: {
+              userName: {
+                  required:"Заполните поле",
+                  minlength:"Имя не короче двух символов",
+                  maxlength:"Имя не длиннее 15 символов"
+              },
+              userPhone: "Заполните поле",
+              },
+        });
+
+        $('.footer__form').validate({
+          errorClass: "invalid",
+          rules: {
+              // simple rule, converted to {required:true}
+              userName: {
+                required: true,
+                minlength: 2,
+                maxlength: 15
+              },
+              userPhone: "required",
+              userQuestion: "required",
+            },
+            errorElement:"div",
+            messages: {
+              userName: {
+                  required:"Заполните поле",
+                  minlength:"Имя не короче двух символов",
+                  maxlength:"Имя не длиннее 15 символов"
+              },
+              userPhone: "Заполните поле",
+              userQuestion: {
+                required:"Задайте вопрос",
+              },
+            },
+        });
 });
 
 
