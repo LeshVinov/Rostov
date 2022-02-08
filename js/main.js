@@ -68,6 +68,12 @@ $(document).ready(function () {
           $('html, body').animate({scrollTop:0}, '300');
         });
 
+        $(".hero__scroll-down").click(function() { // ID откуда кливаем
+          $('html, body').animate({
+              scrollTop: $(".types").offset().top  // класс объекта к которому приезжаем
+          }, 1000); // Скорость прокрутки
+          });
+
         // var mySwiper = new Swiper ('.swiper-container', {
         //     loop: true
         // })
@@ -145,7 +151,6 @@ $(document).ready(function () {
                     alert('Форма отправлена, мы свяжемся с вами через 10 минут');
                     $(form)[0].reset();
                     modal.removeClass('modal--visible');
-                    modal.toggleClass('modal-success--visible');
                   },
                   error: function(response) {
                     console.error('Ошибка ' + response);
