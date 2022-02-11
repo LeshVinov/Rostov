@@ -548,6 +548,11 @@ input.invalid {
       flex-basis: 30%;
 }
 
+.col-35 {
+  -ms-flex-preferred-size: 35%;
+      flex-basis: 35%;
+}
+
 .col-40 {
   -ms-flex-preferred-size: 40%;
       flex-basis: 40%;
@@ -560,6 +565,11 @@ input.invalid {
 .col-60 {
   -ms-flex-preferred-size: 60%;
       flex-basis: 60%;
+}
+
+.col-65 {
+  -ms-flex-preferred-size: 65%;
+      flex-basis: 65%;
 }
 
 *, *:before, *:after {
@@ -966,6 +976,65 @@ img {
 
 .types__section-title {
   margin-bottom: 2rem;
+}
+
+.types .cards {
+  margin-bottom: 8.857rem;
+}
+
+.types .parts {
+  background: url("../img/parts-of-repair.png") no-repeat left;
+  min-height: 49.43rem;
+}
+
+.types .parts__text {
+  font-size: 1.286rem;
+  line-height: 1.5rem;
+  max-width: 26rem;
+}
+
+.types .parts__text:nth-of-type(1) {
+  margin-top: 8.3rem;
+  margin-left: 29.5rem;
+}
+
+.types .parts__text:nth-of-type(2) {
+  margin-top: 5.5rem;
+  margin-left: 35rem;
+}
+
+.types .parts__text:nth-of-type(3) {
+  margin-top: 10rem;
+  margin-left: 36.5rem;
+}
+
+.types .parts__text:nth-of-type(4) {
+  max-width: 18.286rem;
+  margin-top: 9.5rem;
+  margin-left: 32rem;
+}
+
+.types .parts-form {
+  background-color: #131313;
+  padding: 2rem 3.5rem;
+}
+
+.types .parts-form__title {
+  font-family: 'Futura Demi',cursive;
+  font-weight: 500;
+  font-style: 1.43rem;
+  line-height: 1.786rem;
+  text-align: center;
+  color: #fff;
+}
+
+.types .parts-form .policy__label {
+  color: #fff;
+}
+
+.types .parts-form .button {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
 .card__text {

@@ -227,7 +227,7 @@
                     <!-- /.section-title__image -->
                 </div>
                 <!-- /.section-title -->
-                <div class="row">
+                <div class="row cards">
                     <div class="col-30">
                         <div class="card types__card wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
                             <img src="img/types/type-1.jpg" alt="Косметический ремонт" class="card__image">
@@ -325,6 +325,42 @@
                             <!-- /.card__text -->
                         </div>
                         <!-- /.card -->
+                    </div>
+                    <!-- /.col -->
+                </div>
+                <!-- /.row -->
+                <div class="row">
+                    <div class="col-65 parts">
+                        <p class="parts__text">Наш специалист приедет для замеров в день контакта или назначит удобнуюдля вас дату</p>
+                        <p class="parts__text">Бесплатный замер</p>
+                        <p class="parts__text">Бесплатная консультация</p>
+                        <p class="parts__text">Получите смету расходов и сроки вашего будущего ремонта
+                        </p>
+                    </div>
+                    <!-- /.col parts -->
+                    <div class="col-35 parts-form">
+                        <form action="send.php" method="POST" class="form modal__form">
+                            <h3 class="parts-form__title">Оставьте заявку на бесплатный выезд замерщика</h3>
+                            <div class="input-group modal__input-group">
+                                <label for="modal-user-name" class="label form__label label--light">Имя</label>
+                                <input type="text" name="userName" class="input from__input modal__input input--light" id="modal-user-name" placeholder="Как вас зовут:">
+                            </div>
+                            <div class="input-group modal__input-group">
+                                <label for="modal-user-phone" class="label form__label label--light">Телефон</label>
+                                <input type="tel" name="userPhone" class="input from__input modal__input input--light" id="modal-user-phone" placeholder="Ваш номер телефона:">
+                            </div>
+                            <div class="input-group modal__input-group">
+                                <label for="modal-user-email" class="label form__label label--light">Email</label>
+                                <input type="email" name="userEmail" class="input from__input modal__input input--light" id="modal-user-email" placeholder="Ваш email">
+                            </div>
+                            <div class="policy modal__policy">
+                                <input type="checkbox" name="policy-checkbox" id="modal-policy-checkbox" class="policy__checkbox" checked>
+                                <label for="modal-policy-checkbox" class="policy__label">Я соглашаюсь с обработкой данных</label>
+                            </div>
+                            <!-- /.policy -->
+                            <button onclick="ym(87472899,'reachGoal','questionButton'); return true;"class="button button--primary">Вызвать замерщика</button>
+                        </form>
+                        <!-- /.form modal__form -->
                     </div>
                     <!-- /.col -->
                 </div>
