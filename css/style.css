@@ -974,6 +974,11 @@ img {
   margin: auto;
 }
 
+.types {
+  padding-bottom: 23.285rem;
+  margin-bottom: -8rem;
+}
+
 .types__section-title {
   margin-bottom: 2rem;
 }
@@ -1128,22 +1133,110 @@ img {
   padding: 1.214rem 2.6rem;
 }
 
-.section-title__image {
+.styles {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: url("../img/styles-bg.jpg") no-repeat center/cover;
+  padding-top: 8rem;
+  padding-bottom: 5.142rem;
+}
+
+.styles .container {
+  z-index: 3;
+}
+
+.styles::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(19, 19, 19, 0.7);
+}
+
+.styles .section-title__heading {
+  font-size: 1.93rem;
+  line-height: 2.643rem;
+  max-width: 29.357rem;
+  margin-bottom: 2.5rem;
+}
+
+.styles ul {
+  margin: 0;
+  padding: 0;
+}
+
+.styles-list__item {
+  list-style-type: none;
+  font-size: 1.428rem;
+  line-height: 172.4%;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.styles-list__item:hover {
+  color: #E3B873;
+  text-decoration: underline;
+}
+
+.styles .col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.styles .col .col-1 {
+  position: absolute;
+  top: -5%;
+  right: 40%;
+  margin-right: 3.07rem;
+}
+
+.styles .col .col-2 {
+  position: absolute;
+  top: -13%;
+  right: 26%;
+  padding-bottom: 5.714rem;
+}
+
+.styles-img:first-of-type {
   margin-bottom: 2.857rem;
 }
 
-.section-title__subtitle {
+.design {
+  padding-top: 11.142rem;
+}
+
+.design .section-title__image {
+  margin-bottom: 2.857rem;
+}
+
+.design .section-title__subtitle {
   color: #363636;
   margin: 0 auto;
   max-width: 53rem;
   margin-bottom: 2.857rem;
 }
 
-.types__card {
+.design .types__card {
   position: relative;
 }
 
-.types__card__image::before {
+.design .types__card__image::before {
   content: '';
   position: absolute;
   width: 100%;
@@ -1373,7 +1466,7 @@ img {
 .team .section-title__subtitle {
   max-width: 32rem;
   color: #fff;
-  margin-bottom: 5.357rem;
+  margin: auto;
 }
 
 .team .control__text {
@@ -1393,6 +1486,7 @@ img {
 .team .col-30 .card {
   position: relative;
   max-width: 19.43rem;
+  margin-top: 5.357rem;
   z-index: 3;
 }
 
@@ -1470,6 +1564,7 @@ img {
 
 .feedback .section-title__subtitle {
   max-width: 25.71rem;
+  margin: auto;
 }
 
 .feedback-item {
