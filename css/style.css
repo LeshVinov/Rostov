@@ -947,7 +947,8 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  flexbasis: 30%;
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
 }
 
 .control__button {
@@ -1932,6 +1933,9 @@ img {
   .styles .col .col-2 {
     right: 2%;
   }
+  .hero::after {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -2072,9 +2076,6 @@ img {
 @media screen and (max-width: 992px) {
   .nav {
     display: none;
-  }
-  .hero {
-    height: 50vh;
   }
   .hero__instagram {
     display: none;
